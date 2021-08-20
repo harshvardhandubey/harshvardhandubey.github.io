@@ -2694,6 +2694,7 @@ input, select, textarea {
   bottom: 8px;
   width: 100%;
   text-align: center;
+  background-color: rgba(0,0,0,0.8);
 }
 
 /* Number text (1/3 etc) */
