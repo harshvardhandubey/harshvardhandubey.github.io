@@ -115,7 +115,7 @@
 				</div>
 			</article>
 
-		<!-- Portfolio -->
+		<!-- Projects -->
 			<article class="container box style2">
 				<header>
 					<h2>Project contributions</h2>
@@ -134,6 +134,70 @@
 					</p>
 				</header>
 			</article>
+			
+			
+			<!-- Image Gallery -->
+			<article class="container box style2">
+				<header>
+					<h2>Image Gallery</h2>
+					<div class="slideshow-container">
+					
+					<div class="mySlides fade">
+					  <div class="numbertext">1 / 6</div>
+					  <img src="images/gallery/Convocation.jpg" style="width:100%">
+					  <div class="text">Convocation</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">2 / 6</div>
+					  <img src="images/gallery/College.jpg" style="width:100%">
+					  <div class="text">Outstanding Performance Award</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">3 / 6</div>
+					  <img src="images/gallery/PathFinder.jpg" style="width:100%">
+					  <div class="text">Path Finder Award</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">4 / 6</div>
+					  <img src="images/gallery/Placement.jpg" style="width:100%">
+					  <div class="text">Placement recognition</div>
+					</div>
+					
+					<div class="mySlides fade">
+					  <div class="numbertext">5 / 6</div>
+					  <img src="images/gallery/CSR1.jpg" style="width:100%">
+					  <div class="text">Corporate Social Responsibility</div>
+					</div>
+					
+					<div class="mySlides fade">
+					  <div class="numbertext">6 / 6</div>
+					  <img src="images/gallery/CSR2.jpg" style="width:100%">
+					  <div class="text">Corporate Social Responsibility</div>
+					</div>
+					
+					
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					</div>
+					<br>
+
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					  <span class="dot" onclick="currentSlide(4)"></span> 
+					  <span class="dot" onclick="currentSlide(5)"></span> 
+					  <span class="dot" onclick="currentSlide(6)"></span> 
+					</div>
+				</header>
+				
+				
+			</article>
 
 		
 
@@ -151,6 +215,9 @@
 				</ul>
 			</div>
 		</section>
+		
+		
+		
 <div style="float:right;">
 <img src="images/avatar.png" alt="" width="110" height="130" />
 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/849886/t/9"></script>
@@ -164,6 +231,35 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+			</script>
 
 	</body>
 </html>
