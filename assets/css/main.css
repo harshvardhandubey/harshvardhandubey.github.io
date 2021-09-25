@@ -2840,7 +2840,7 @@ a.pv-recommendation-entity__member {
 
 /* sizing of recommendation text */
 blockquote {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.3333;
     font-weight: 200;
     color: rgba(0,0,0,.75);
