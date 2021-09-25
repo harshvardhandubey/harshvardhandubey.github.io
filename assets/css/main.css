@@ -2754,3 +2754,123 @@ input, select, textarea {
  height: auto;
  width: 400px;
 }
+
+
+
+/* LINKEDIN*/
+
+.pv-recommendation-entity:first-child {
+    padding-top: 0;
+    border-top: none;
+}
+.pv-recommendation-entity {
+    margin-right: 0;
+    display: flex;
+    border-top: 1px solid #e6e9ec;
+    padding: 16px 0;
+}
+
+/* image settings */
+.pv-recommendation-entity img {
+  border-radius: 50%
+}
+
+.pv-recommendation-entity__header {
+    width: 45%;
+}
+
+.pv-recommendation-entity__highlights {
+    width: 55%;
+    padding-left: 16px;
+}
+
+.pv-profile-wrapper a:visited {
+    color: #fff;
+}
+.pv-profile-wrapper a {
+    text-decoration: none;
+}
+
+.pv-recommendation-entity__member {
+    display: block;
+    overflow: auto;
+    text-decoration: none;
+}
+
+a.pv-recommendation-entity__member {
+      color: #fff;
+      text-decoration: none;
+      -webkit-transition: all .2s linear;
+      transition: all .2s linear;
+      border-bottom: 0px #fff;
+}
+
+/* name of recommending */
+.t-16 {
+    padding-top: 20px;
+    font-size: 1.5rem;
+    line-height: 1.33333;
+}
+
+/* title of recommending */
+.t-14 {
+    font-size: 1.0rem;
+    line-height: 1.42857;
+}
+
+/* date and relationship */
+.t-12 {
+    font-size: 1rem;
+    line-height: 1.33333;
+}
+
+/* more text styles */
+.t-black {
+    color: rgba(0,0,0,.9);
+}
+.t-bold {
+    font-weight: 600;
+}
+.t-normal {
+    font-weight: 400;
+}
+.t-black--light {
+    color: rgba(0,0,0,.6);
+}
+
+/* sizing of recommendation text */
+blockquote {
+    font-size: 1.2rem;
+    line-height: 1.3333;
+    font-weight: 200;
+    color: rgba(0,0,0,.75);
+}
+blockquote, q {
+    quotes: none;
+}
+
+.prevrec, .nextrec {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+background-color: rgba(0,0,0,0.8);
+}
+
+.prevrec {
+	left: 0;
+}
+
+/* Position the "next button" to the right */
+.nextrec {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
