@@ -2808,7 +2808,13 @@ a.pv-recommendation-entity__member {
 /* name of recommending */
 .t-16 {
     padding-top: 20px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.33333;
+}
+
+.t-16big {
+    padding-top: 20px;
+    font-size: 1.3rem;
     line-height: 1.33333;
 }
 
